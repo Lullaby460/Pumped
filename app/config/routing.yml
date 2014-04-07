@@ -1,0 +1,12 @@
+pumped_pumped:
+    resource: "@PumpedPumpedBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pumped_calendar:
+    resource: "@PumpedCalendarBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pumped_user:
+    resource: "@PumpedUserBundle/Resources/config/routing.yml"
+    prefix:   /
+

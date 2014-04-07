@@ -1,0 +1,7 @@
+parameters:
+#    pumped_user.example.class: Pumped\UserBundle\Example
+
+services:
+#    pumped_user.example:
+#        class: %pumped_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

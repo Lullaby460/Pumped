@@ -1,0 +1,9 @@
+pumped_pumped_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: PumpedPumpedBundle:Default:index }
+
+# src/Sdz/BlogBundle/Resources/config/routing.yml
+
+HelloTheWorld:
+    path:     /hello-world
+    defaults: { _controller: PumpedPumpedBundle:Default:index }

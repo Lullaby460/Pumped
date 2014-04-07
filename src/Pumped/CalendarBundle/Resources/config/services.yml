@@ -1,0 +1,7 @@
+parameters:
+#    pumped_calendar.example.class: Pumped\CalendarBundle\Example
+
+services:
+#    pumped_calendar.example:
+#        class: %pumped_calendar.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
