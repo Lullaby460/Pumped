@@ -151,11 +151,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'pumped_calendar_homepage')), array (  '_controller' => 'Pumped\\CalendarBundle\\Controller\\DefaultController::indexAction',));
             }
 
-            // pumped_user_homepage
-            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'pumped_user_homepage')), array (  '_controller' => 'Pumped\\UserBundle\\Controller\\DefaultController::indexAction',));
-            }
+        }
 
+        // pumped_calendar_afficher
+        if ($pathinfo === '/acceuil') {
+            return array (  '_controller' => 'PumpedCalendarBundle:Calendar:showMini',  '_route' => 'pumped_calendar_afficher',);
+        }
+
+        // pumped_user_homepage
+        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'pumped_user_homepage')), array (  '_controller' => 'Pumped\\UserBundle\\Controller\\DefaultController::indexAction',));
         }
 
         // _welcome

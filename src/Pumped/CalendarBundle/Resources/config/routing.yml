@@ -1,3 +1,7 @@
 pumped_calendar_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: PumpedCalendarBundle:Default:index }
+
+pumped_calendar_afficher:
+    pattern:  /acceuil
+    defaults: { _controller: PumpedCalendarBundle:Calendar:showMini }

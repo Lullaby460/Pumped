@@ -1,6 +1,6 @@
 <?php
 
-namespace BladeTester\CalendarBundle\Controller;
+namespace Pumped\CalendarBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
